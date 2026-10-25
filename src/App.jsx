@@ -12,7 +12,6 @@ import TestimonialsSection from './sections/TestimonialsSection';
 import ContactSection from './sections/ContactSection';
 import Footer from './sections/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
-import ChatWidget from './components/ChatWidget';
 
 export default function App() {
   return (
@@ -34,7 +33,6 @@ export default function App() {
 
       {/* Floating Utilities */}
       <LanguageSwitcher />
-      <ChatWidget />
     </div>
   );
 }
