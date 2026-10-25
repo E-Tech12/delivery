@@ -53,14 +53,21 @@ export default function HeroSection() {
           </h3>
         </div>
 
-        {/* Supporting paragraph text block */}
-        <div className="max-w-[532px] mx-auto px-4 text-center">
-          <p className="font-tahoma text-[17px] md:text-[20px] text-[#060000] font-bold leading-[1.5] shadow-xs">
-            Let us come to your home or business to pick up<br className="hidden sm:inline" />
-            your package. It’s easy to schedule a one-time<br className="hidden sm:inline" />
-            pickup online. If you have recurring delivery needs,<br className="hidden sm:inline" />
-            plan ahead with regular pickups.
-          </p>
+        {/* Supporting paragraph text block with enhanced high-contrast readability */}
+        <div className="max-w-[580px] mx-auto px-4 text-center">
+          <div className="bg-black/45 backdrop-blur-[2px] rounded-xl p-4 sm:p-5 border border-white/15 shadow-xl">
+            <p
+              className="font-tahoma text-[18px] sm:text-[20px] md:text-[21px] text-white font-bold sm:font-extrabold leading-[1.6] m-0"
+              style={{
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.95), 0 4px 12px rgba(0, 0, 0, 0.85)',
+              }}
+            >
+              Let us come to your home or business to pick up<br className="hidden sm:inline" />
+              {' '}your package. It’s easy to schedule a one-time<br className="hidden sm:inline" />
+              {' '}pickup online. If you have recurring delivery needs,<br className="hidden sm:inline" />
+              {' '}plan ahead with regular pickups.
+            </p>
+          </div>
         </div>
       </div>
     </section>
